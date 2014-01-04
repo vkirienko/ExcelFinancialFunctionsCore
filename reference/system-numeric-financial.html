@@ -101,7 +101,7 @@
         </td>
         <td class="xmldoc">
         <p>The depreciation for each accounting period by using a depreciation coefficient (<a href="http://office.microsoft.com/en-us/excel/HP052089841033.aspx">learn more</a>)<br />
-ExcelCompaint is used because Excel stores 13 digits. amorDegrc alorithm rounds numbers<br />
+ExcelCompliant is used because Excel stores 13 digits. AmorDegrc algorithm rounds numbers<br />
 and returns different results unless the numbers get rounded to 13 digits before rounding them.<br />
 I.E. 22.49999999999999 is considered 22.5 by Excel, but 22.4 by the .NET framework</p>
 
@@ -306,7 +306,7 @@ This equality should stand. The differs from Excel by +/- one or two days when t
 Excel Ddb has two interesting characteristics:<br />
 1. It special cases ddb for fractional periods between 0 and 1 by considering them to be 1<br />
 2. It is inconsistent with VDB(..., True) for fractional periods, even if VDB(..., True) is defined to be the same as ddb. The algorithm for VDB is theoretically correct.<br />
-This function makes the same 1. ajdjustment.</p>
+This function makes the same 1. adjustment.</p>
 
         </td>
       </tr>
@@ -1007,6 +1007,7 @@ Overall, I think my algorithm is correct, even if it disagrees with Excel when s
             
             <li class="nav-header">Documentation</li>
             <li><a href="http://fsprojects.github.io/ExcelFinancialFunctions/reference/index.html">API Reference</a></li>
+              <li><a href="http://fsprojects.github.io/ExcelFinancialFunctions/compatibility.html">Compatibility</a></li>
           </ul>
         </div>
       </div>
