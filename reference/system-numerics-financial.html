@@ -47,56 +47,59 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '14', 14)" onmouseover="showTip(event, '14', 14)">
+          <code onmouseout="hideTip(event, '20', 20)" onmouseover="showTip(event, '20', 20)">
             AccrInt(...)
           </code>
-          <div class="tip" id="14">
-            <strong>Signature:</strong>(issue:DateTime * firstInterest:DateTime * settlement:DateTime * rate:float&lt;1&gt; * par:float&lt;1&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
+          <div class="tip" id="20">
+            <strong>Signature:</strong>(issue:DateTime * firstInterest:DateTime * settlement:DateTime * rate:float&lt;MeasureOne&gt; * par:float&lt;MeasureOne&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
         <p>The accrued interest for a security that pays periodic interest (<a href="http://office.microsoft.com/en-us/excel/HP052089791033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L26-26" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '15', 15)" onmouseover="showTip(event, '15', 15)">
+          <code onmouseout="hideTip(event, '21', 21)" onmouseover="showTip(event, '21', 21)">
             AccrInt(...)
           </code>
-          <div class="tip" id="15">
-            <strong>Signature:</strong>(issue:DateTime * firstInterest:DateTime * settlement:DateTime * rate:float&lt;1&gt; * par:float&lt;1&gt; * frequency:Frequency * basis:DayCountBasis * calcMethod:AccrIntCalcMethod) -&gt; float<br />
+          <div class="tip" id="21">
+            <strong>Signature:</strong>(issue:DateTime * firstInterest:DateTime * settlement:DateTime * rate:float&lt;MeasureOne&gt; * par:float&lt;MeasureOne&gt; * frequency:Frequency * basis:DayCountBasis * calcMethod:AccrIntCalcMethod) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
         <p>The accrued interest for a security that pays periodic interest (<a href="http://office.microsoft.com/en-us/excel/HP052089791033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L23-23" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '16', 16)" onmouseover="showTip(event, '16', 16)">
+          <code onmouseout="hideTip(event, '22', 22)" onmouseover="showTip(event, '22', 22)">
             AccrIntM(...)
           </code>
-          <div class="tip" id="16">
-            <strong>Signature:</strong>(issue:DateTime * settlement:DateTime * rate:float&lt;1&gt; * par:float&lt;1&gt; * basis:DayCountBasis) -&gt; float<br />
+          <div class="tip" id="22">
+            <strong>Signature:</strong>(issue:DateTime * settlement:DateTime * rate:float&lt;MeasureOne&gt; * par:float&lt;MeasureOne&gt; * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
         <p>The accrued interest for a security that pays interest at maturity (<a href="http://office.microsoft.com/en-us/excel/HP052089801033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L30-30" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '17', 17)" onmouseover="showTip(event, '17', 17)">
+          <code onmouseout="hideTip(event, '23', 23)" onmouseover="showTip(event, '23', 23)">
             AmorDegrc(...)
           </code>
-          <div class="tip" id="17">
-            <strong>Signature:</strong>(cost:float&lt;1&gt; * datePurchased:DateTime * firstPeriod:DateTime * salvage:float&lt;1&gt; * period:float&lt;1&gt; * rate:float&lt;1&gt; * basis:DayCountBasis * excelCompliant:bool) -&gt; float&lt;1&gt;<br />
+          <div class="tip" id="23">
+            <strong>Signature:</strong>(cost:float&lt;MeasureOne&gt; * datePurchased:DateTime * firstPeriod:DateTime * salvage:float&lt;MeasureOne&gt; * period:float&lt;MeasureOne&gt; * rate:float&lt;MeasureOne&gt; * basis:DayCountBasis * excelCompliant:bool) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
@@ -105,30 +108,32 @@ ExcelCompliant is used because Excel stores 13 digits. AmorDegrc algorithm round
 and returns different results unless the numbers get rounded to 13 digits before rounding them.<br />
 I.E. 22.49999999999999 is considered 22.5 by Excel, but 22.4 by the .NET framework</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L37-37" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '18', 18)" onmouseover="showTip(event, '18', 18)">
+          <code onmouseout="hideTip(event, '24', 24)" onmouseover="showTip(event, '24', 24)">
             AmorLinc(...)
           </code>
-          <div class="tip" id="18">
-            <strong>Signature:</strong>(cost:float&lt;1&gt; * datePurchased:DateTime * firstPeriod:DateTime * salvage:float&lt;1&gt; * period:float&lt;1&gt; * rate:float&lt;1&gt; * basis:DayCountBasis) -&gt; float&lt;1&gt;<br />
+          <div class="tip" id="24">
+            <strong>Signature:</strong>(cost:float&lt;MeasureOne&gt; * datePurchased:DateTime * firstPeriod:DateTime * salvage:float&lt;MeasureOne&gt; * period:float&lt;MeasureOne&gt; * rate:float&lt;MeasureOne&gt; * basis:DayCountBasis) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
         <p>The depreciation for each accounting period (<a href="http://office.microsoft.com/en-us/excel/HP052089851033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L41-41" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '19', 19)" onmouseover="showTip(event, '19', 19)">
+          <code onmouseout="hideTip(event, '25', 25)" onmouseover="showTip(event, '25', 25)">
             CoupDays(...)
           </code>
-          <div class="tip" id="19">
+          <div class="tip" id="25">
             <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
@@ -137,168 +142,179 @@ I.E. 22.49999999999999 is considered 22.5 by Excel, but 22.4 by the .NET framewo
 The Excel algorithm seems wrong in that it doesn't respect <code>coupDays = coupDaysBS + coupDaysNC</code>  <br />
 This equality should stand. The differs from Excel by +/- one or two days when the date spans a leap year.</p>
 
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '20', 20)" onmouseover="showTip(event, '20', 20)">
-            CoupDaysBS(...)
-          </code>
-          <div class="tip" id="20">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        <p>The number of days from the beginning of the coupon period to the settlement date (<a href="http://office.microsoft.com/en-us/excel/HP052090301033.aspx">learn more</a>)</p>
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '21', 21)" onmouseover="showTip(event, '21', 21)">
-            CoupDaysNC(...)
-          </code>
-          <div class="tip" id="21">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        <p>The number of days from the settlement date to the next coupon date (<a href="http://office.microsoft.com/en-us/excel/HP052090321033.aspx">learn more</a>)</p>
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '22', 22)" onmouseover="showTip(event, '22', 22)">
-            CoupNCD(...)
-          </code>
-          <div class="tip" id="22">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * frequency:Frequency * basis:DayCountBasis) -&gt; DateTime<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        <p>The next coupon date after the settlement date (<a href="http://office.microsoft.com/en-us/excel/HP052090331033.aspx">learn more</a>)</p>
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '23', 23)" onmouseover="showTip(event, '23', 23)">
-            CoupNum(...)
-          </code>
-          <div class="tip" id="23">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        <p>The number of coupons payable between the settlement date and maturity date (<a href="http://office.microsoft.com/en-us/excel/HP052090341033.aspx">learn more</a>)</p>
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '24', 24)" onmouseover="showTip(event, '24', 24)">
-            CoupPCD(...)
-          </code>
-          <div class="tip" id="24">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * frequency:Frequency * basis:DayCountBasis) -&gt; DateTime<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        <p>The previous coupon date before the settlement date (<a href="http://office.microsoft.com/en-us/excel/HP052090351033.aspx">learn more</a>)</p>
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '25', 25)" onmouseover="showTip(event, '25', 25)">
-            CumIPmt(...)
-          </code>
-          <div class="tip" id="25">
-            <strong>Signature:</strong>(rate:float&lt;1&gt; * nper:float * pv:float&lt;1&gt; * startPeriod:float&lt;1&gt; * endPeriod:float&lt;1&gt; * typ:PaymentDue) -&gt; float&lt;1&gt;<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        <p>The cumulative interest paid between two periods (<a href="http://office.microsoft.com/en-us/excel/HP052090381033.aspx">learn more</a>)</p>
-
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L51-51" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '26', 26)" onmouseover="showTip(event, '26', 26)">
-            CumPrinc(...)
+            CoupDaysBS(...)
           </code>
           <div class="tip" id="26">
-            <strong>Signature:</strong>(rate:float&lt;1&gt; * nper:float * pv:float&lt;1&gt; * startPeriod:float&lt;1&gt; * endPeriod:float&lt;1&gt; * typ:PaymentDue) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The cumulative principal paid on a loan between two periods (<a href="http://office.microsoft.com/en-us/excel/HP052090391033.aspx">learn more</a>)</p>
+        <p>The number of days from the beginning of the coupon period to the settlement date (<a href="http://office.microsoft.com/en-us/excel/HP052090301033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L45-45" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '27', 27)" onmouseover="showTip(event, '27', 27)">
-            Db(cost, salvage, life, period)
+            CoupDaysNC(...)
           </code>
           <div class="tip" id="27">
-            <strong>Signature:</strong>(cost:float&lt;1&gt; * salvage:float&lt;1&gt; * life:float&lt;1&gt; * period:float&lt;1&gt;) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The depreciation of an asset for a specified period by using the fixed-declining balance method
-(<a href="http://office.microsoft.com/en-us/excel/HP052090481033.aspx">learn more</a>)</p>
+        <p>The number of days from the settlement date to the next coupon date (<a href="http://office.microsoft.com/en-us/excel/HP052090321033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L55-55" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '28', 28)" onmouseover="showTip(event, '28', 28)">
-            Db(cost, salvage, life, period, month)
+            CoupNCD(...)
           </code>
           <div class="tip" id="28">
-            <strong>Signature:</strong>(cost:float&lt;1&gt; * salvage:float&lt;1&gt; * life:float&lt;1&gt; * period:float&lt;1&gt; * month:float&lt;1&gt;) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * frequency:Frequency * basis:DayCountBasis) -&gt; DateTime<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The depreciation of an asset for a specified period by using the fixed-declining balance method
-(<a href="http://office.microsoft.com/en-us/excel/HP052090481033.aspx">learn more</a>)</p>
+        <p>The next coupon date after the settlement date (<a href="http://office.microsoft.com/en-us/excel/HP052090331033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L59-59" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '29', 29)" onmouseover="showTip(event, '29', 29)">
-            Ddb(cost, salvage, life, period)
+            CoupNum(...)
           </code>
           <div class="tip" id="29">
-            <strong>Signature:</strong>(cost:float&lt;1&gt; * salvage:float&lt;1&gt; * life:float&lt;1&gt; * period:float&lt;1&gt;) -&gt; float<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The depreciation of an asset for a specified period by using the double-declining balance method or some other method that you specify (<a href="http://office.microsoft.com/en-us/excel/HP052090511033.aspx">learn more</a>)</p>
+        <p>The number of coupons payable between the settlement date and maturity date (<a href="http://office.microsoft.com/en-us/excel/HP052090341033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L63-63" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '30', 30)" onmouseover="showTip(event, '30', 30)">
-            Ddb(cost, salvage, life, period, factor)
+            CoupPCD(...)
           </code>
           <div class="tip" id="30">
-            <strong>Signature:</strong>(cost:float&lt;1&gt; * salvage:float&lt;1&gt; * life:float&lt;1&gt; * period:float&lt;1&gt; * factor:float&lt;1&gt;) -&gt; float<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * frequency:Frequency * basis:DayCountBasis) -&gt; DateTime<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+        <p>The previous coupon date before the settlement date (<a href="http://office.microsoft.com/en-us/excel/HP052090351033.aspx">learn more</a>)</p>
+
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L67-67" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '31', 31)" onmouseover="showTip(event, '31', 31)">
+            CumIPmt(...)
+          </code>
+          <div class="tip" id="31">
+            <strong>Signature:</strong>(rate:float&lt;MeasureOne&gt; * nper:float * pv:float&lt;MeasureOne&gt; * startPeriod:float&lt;MeasureOne&gt; * endPeriod:float&lt;MeasureOne&gt; * typ:PaymentDue) -&gt; float&lt;MeasureOne&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+        <p>The cumulative interest paid between two periods (<a href="http://office.microsoft.com/en-us/excel/HP052090381033.aspx">learn more</a>)</p>
+
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L71-71" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '32', 32)" onmouseover="showTip(event, '32', 32)">
+            CumPrinc(...)
+          </code>
+          <div class="tip" id="32">
+            <strong>Signature:</strong>(rate:float&lt;MeasureOne&gt; * nper:float * pv:float&lt;MeasureOne&gt; * startPeriod:float&lt;MeasureOne&gt; * endPeriod:float&lt;MeasureOne&gt; * typ:PaymentDue) -&gt; float&lt;MeasureOne&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+        <p>The cumulative principal paid on a loan between two periods (<a href="http://office.microsoft.com/en-us/excel/HP052090391033.aspx">learn more</a>)</p>
+
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L75-75" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '33', 33)" onmouseover="showTip(event, '33', 33)">
+            Db(cost, salvage, life, period)
+          </code>
+          <div class="tip" id="33">
+            <strong>Signature:</strong>(cost:float&lt;MeasureOne&gt; * salvage:float&lt;MeasureOne&gt; * life:float&lt;MeasureOne&gt; * period:float&lt;MeasureOne&gt;) -&gt; float&lt;MeasureOne&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+        <p>The depreciation of an asset for a specified period by using the fixed-declining balance method
+(<a href="http://office.microsoft.com/en-us/excel/HP052090481033.aspx">learn more</a>)</p>
+
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L84-84" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '34', 34)" onmouseover="showTip(event, '34', 34)">
+            Db(cost, salvage, life, period, month)
+          </code>
+          <div class="tip" id="34">
+            <strong>Signature:</strong>(cost:float&lt;MeasureOne&gt; * salvage:float&lt;MeasureOne&gt; * life:float&lt;MeasureOne&gt; * period:float&lt;MeasureOne&gt; * month:float&lt;MeasureOne&gt;) -&gt; float&lt;MeasureOne&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+        <p>The depreciation of an asset for a specified period by using the fixed-declining balance method
+(<a href="http://office.microsoft.com/en-us/excel/HP052090481033.aspx">learn more</a>)</p>
+
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L80-80" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '35', 35)" onmouseover="showTip(event, '35', 35)">
+            Ddb(cost, salvage, life, period)
+          </code>
+          <div class="tip" id="35">
+            <strong>Signature:</strong>(cost:float&lt;MeasureOne&gt; * salvage:float&lt;MeasureOne&gt; * life:float&lt;MeasureOne&gt; * period:float&lt;MeasureOne&gt;) -&gt; float<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+        <p>The depreciation of an asset for a specified period by using the double-declining balance method or some other method that you specify (<a href="http://office.microsoft.com/en-us/excel/HP052090511033.aspx">learn more</a>)</p>
+
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L96-96" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '36', 36)" onmouseover="showTip(event, '36', 36)">
+            Ddb(cost, salvage, life, period, factor)
+          </code>
+          <div class="tip" id="36">
+            <strong>Signature:</strong>(cost:float&lt;MeasureOne&gt; * salvage:float&lt;MeasureOne&gt; * life:float&lt;MeasureOne&gt; * period:float&lt;MeasureOne&gt; * factor:float&lt;MeasureOne&gt;) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
@@ -308,571 +324,609 @@ Excel Ddb has two interesting characteristics:<br />
 2. It is inconsistent with VDB(..., True) for fractional periods, even if VDB(..., True) is defined to be the same as ddb. The algorithm for VDB is theoretically correct.<br />
 This function makes the same 1. adjustment.</p>
 
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '31', 31)" onmouseover="showTip(event, '31', 31)">
-            Disc(...)
-          </code>
-          <div class="tip" id="31">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * pr:float&lt;1&gt; * redemption:float&lt;1&gt; * basis:DayCountBasis) -&gt; float&lt;1&gt;<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        <p>The discount rate for a security (<a href="http://office.microsoft.com/en-us/excel/HP052090601033.aspx">learn more</a>)</p>
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '32', 32)" onmouseover="showTip(event, '32', 32)">
-            DollarDe(fractionalDollar, fraction)
-          </code>
-          <div class="tip" id="32">
-            <strong>Signature:</strong>(fractionalDollar:float&lt;1&gt; * fraction:float&lt;1&gt;) -&gt; float&lt;1&gt;<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        <p>Converts a dollar price, expressed as a fraction, into a dollar price, expressed as a decimal number (<a href="http://office.microsoft.com/en-us/excel/HP052090641033.aspx">learn more</a>)</p>
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '33', 33)" onmouseover="showTip(event, '33', 33)">
-            DollarFr(decimalDollar, fraction)
-          </code>
-          <div class="tip" id="33">
-            <strong>Signature:</strong>(decimalDollar:float&lt;1&gt; * fraction:float&lt;1&gt;) -&gt; float&lt;1&gt;<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        <p>Converts a dollar price, expressed as a decimal number, into a dollar price, expressed as a fraction (<a href="http://office.microsoft.com/en-us/excel/HP052090651033.aspx">learn more</a>)</p>
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '34', 34)" onmouseover="showTip(event, '34', 34)">
-            Duration(...)
-          </code>
-          <div class="tip" id="34">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * coupon:float&lt;1&gt; * yld:float&lt;1&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        <p>The annual duration of a security with periodic interest payments (<a href="http://office.microsoft.com/en-us/excel/HP052090701033.aspx">learn more</a>)</p>
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '35', 35)" onmouseover="showTip(event, '35', 35)">
-            Effect(nominalRate, npery)
-          </code>
-          <div class="tip" id="35">
-            <strong>Signature:</strong>(nominalRate:float&lt;1&gt; * npery:float&lt;1&gt;) -&gt; float<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        <p>The effective annual interest rate (<a href="http://office.microsoft.com/en-us/excel/HP052090741033.aspx">learn more</a>)</p>
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '36', 36)" onmouseover="showTip(event, '36', 36)">
-            Fv(rate, nper, pmt, pv, typ)
-          </code>
-          <div class="tip" id="36">
-            <strong>Signature:</strong>(rate:float&lt;1&gt; * nper:float * pmt:float&lt;1&gt; * pv:float&lt;1&gt; * typ:PaymentDue) -&gt; float&lt;1&gt;<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        <p>The future value of an investment (<a href="http://office.microsoft.com/en-us/excel/HP052090991033.aspx">learn more</a>)</p>
-
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L92-92" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '37', 37)" onmouseover="showTip(event, '37', 37)">
-            FvSchedule(principal, schedule)
+            Disc(...)
           </code>
           <div class="tip" id="37">
-            <strong>Signature:</strong>(principal:float * schedule:seq&lt;float&lt;1&gt;&gt;) -&gt; float<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * pr:float&lt;MeasureOne&gt; * redemption:float&lt;MeasureOne&gt; * basis:DayCountBasis) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The future value of an initial principal after applying a series of compound interest rates (<a href="http://office.microsoft.com/en-us/excel/HP052091001033.aspx">learn more</a>)</p>
+        <p>The discount rate for a security (<a href="http://office.microsoft.com/en-us/excel/HP052090601033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L100-100" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '38', 38)" onmouseover="showTip(event, '38', 38)">
-            IntRate(...)
+            DollarDe(fractionalDollar, fraction)
           </code>
           <div class="tip" id="38">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * investment:float&lt;1&gt; * redemption:float&lt;1&gt; * basis:DayCountBasis) -&gt; float<br />
+            <strong>Signature:</strong>(fractionalDollar:float&lt;MeasureOne&gt; * fraction:float&lt;MeasureOne&gt;) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The interest rate for a fully invested security (<a href="http://office.microsoft.com/en-us/excel/HP052091441033.aspx">learn more</a>)</p>
+        <p>Converts a dollar price, expressed as a fraction, into a dollar price, expressed as a decimal number (<a href="http://office.microsoft.com/en-us/excel/HP052090641033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L104-104" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '39', 39)" onmouseover="showTip(event, '39', 39)">
-            IPmt(rate, per, nper, pv, fv, typ)
+            DollarFr(decimalDollar, fraction)
           </code>
           <div class="tip" id="39">
-            <strong>Signature:</strong>(rate:float&lt;1&gt; * per:float&lt;1&gt; * nper:float * pv:float&lt;1&gt; * fv:float&lt;1&gt; * typ:PaymentDue) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(decimalDollar:float&lt;MeasureOne&gt; * fraction:float&lt;MeasureOne&gt;) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The interest payment for an investment for a given period (<a href="http://office.microsoft.com/en-us/excel/HP052091451033.aspx">learn more</a>)</p>
+        <p>Converts a dollar price, expressed as a decimal number, into a dollar price, expressed as a fraction (<a href="http://office.microsoft.com/en-us/excel/HP052090651033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L108-108" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '40', 40)" onmouseover="showTip(event, '40', 40)">
-            Irr(values)
+            Duration(...)
           </code>
           <div class="tip" id="40">
-            <strong>Signature:</strong>values:seq&lt;float&lt;1&gt;&gt; -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * coupon:float&lt;MeasureOne&gt; * yld:float&lt;MeasureOne&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The internal rate of return for a series of cash flows (<a href="http://office.microsoft.com/en-us/excel/HP052091461033.aspx">learn more</a>)</p>
+        <p>The annual duration of a security with periodic interest payments (<a href="http://office.microsoft.com/en-us/excel/HP052090701033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L112-112" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '41', 41)" onmouseover="showTip(event, '41', 41)">
-            Irr(values, guess)
+            Effect(nominalRate, npery)
           </code>
           <div class="tip" id="41">
-            <strong>Signature:</strong>(values:seq&lt;float&lt;1&gt;&gt; * guess:float&lt;1&gt;) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(nominalRate:float&lt;MeasureOne&gt; * npery:float&lt;MeasureOne&gt;) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The internal rate of return for a series of cash flows (<a href="http://office.microsoft.com/en-us/excel/HP052091461033.aspx">learn more</a>)</p>
+        <p>The effective annual interest rate (<a href="http://office.microsoft.com/en-us/excel/HP052090741033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L116-116" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '42', 42)" onmouseover="showTip(event, '42', 42)">
-            ISPmt(rate, per, nper, pv)
+            Fv(rate, nper, pmt, pv, typ)
           </code>
           <div class="tip" id="42">
-            <strong>Signature:</strong>(rate:float&lt;1&gt; * per:float&lt;1&gt; * nper:float&lt;1&gt; * pv:float&lt;1&gt;) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(rate:float&lt;MeasureOne&gt; * nper:float * pmt:float&lt;MeasureOne&gt; * pv:float&lt;MeasureOne&gt; * typ:PaymentDue) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>Calculates the interest paid during a specific period of an investment (<a href="http://office.microsoft.com/en-us/excel/HP052508401033.aspx">learn more</a>)</p>
+        <p>The future value of an investment (<a href="http://office.microsoft.com/en-us/excel/HP052090991033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L120-120" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '43', 43)" onmouseover="showTip(event, '43', 43)">
-            MDuration(...)
+            FvSchedule(principal, schedule)
           </code>
           <div class="tip" id="43">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * coupon:float&lt;1&gt; * yld:float&lt;1&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
+            <strong>Signature:</strong>(principal:float * schedule:seq&lt;float&lt;MeasureOne&gt;&gt;) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The Macauley modified duration for a security with an assumed par value of $100 (<a href="http://office.microsoft.com/en-us/excel/HP052091731033.aspx">learn more</a>)</p>
+        <p>The future value of an initial principal after applying a series of compound interest rates (<a href="http://office.microsoft.com/en-us/excel/HP052091001033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L124-124" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '44', 44)" onmouseover="showTip(event, '44', 44)">
-            Mirr(values, financeRate, reinvestRate)
+            IntRate(...)
           </code>
           <div class="tip" id="44">
-            <strong>Signature:</strong>(values:seq&lt;float&lt;1&gt;&gt; * financeRate:float&lt;1&gt; * reinvestRate:float&lt;1&gt;) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * investment:float&lt;MeasureOne&gt; * redemption:float&lt;MeasureOne&gt; * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The internal rate of return where positive and negative cash flows are financed at different rates (<a href="http://office.microsoft.com/en-us/excel/HP052091801033.aspx">learn more</a>)</p>
+        <p>The interest rate for a fully invested security (<a href="http://office.microsoft.com/en-us/excel/HP052091441033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L128-128" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '45', 45)" onmouseover="showTip(event, '45', 45)">
-            Nominal(effectRate, npery)
+            IPmt(rate, per, nper, pv, fv, typ)
           </code>
           <div class="tip" id="45">
-            <strong>Signature:</strong>(effectRate:float&lt;1&gt; * npery:float&lt;1&gt;) -&gt; float<br />
+            <strong>Signature:</strong>(rate:float&lt;MeasureOne&gt; * per:float&lt;MeasureOne&gt; * nper:float * pv:float&lt;MeasureOne&gt; * fv:float&lt;MeasureOne&gt; * typ:PaymentDue) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The annual nominal interest rate (<a href="http://office.microsoft.com/en-us/excel/HP052091911033.aspx">learn more</a>)</p>
+        <p>The interest payment for an investment for a given period (<a href="http://office.microsoft.com/en-us/excel/HP052091451033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L132-132" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '46', 46)" onmouseover="showTip(event, '46', 46)">
-            NPer(rate, pmt, pv, fv, typ)
+            Irr(values)
           </code>
           <div class="tip" id="46">
-            <strong>Signature:</strong>(rate:float&lt;1&gt; * pmt:float&lt;1&gt; * pv:float * fv:float * typ:PaymentDue) -&gt; float<br />
+            <strong>Signature:</strong>values:seq&lt;float&lt;MeasureOne&gt;&gt; -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The number of periods for an investment (<a href="http://office.microsoft.com/en-us/excel/HP052091981033.aspx">learn more</a>)</p>
+        <p>The internal rate of return for a series of cash flows (<a href="http://office.microsoft.com/en-us/excel/HP052091461033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L139-139" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '47', 47)" onmouseover="showTip(event, '47', 47)">
-            Npv(rate, values)
+            Irr(values, guess)
           </code>
           <div class="tip" id="47">
-            <strong>Signature:</strong>(rate:float&lt;1&gt; * values:seq&lt;float&lt;1&gt;&gt;) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(values:seq&lt;float&lt;MeasureOne&gt;&gt; * guess:float&lt;MeasureOne&gt;) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The net present value of an investment based on a series of periodic cash flows and a discount rate (<a href="http://office.microsoft.com/en-us/excel/HP052091991033.aspx">learn more</a>)</p>
+        <p>The internal rate of return for a series of cash flows (<a href="http://office.microsoft.com/en-us/excel/HP052091461033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L136-136" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '48', 48)" onmouseover="showTip(event, '48', 48)">
-            OddFPrice(...)
+            ISPmt(rate, per, nper, pv)
           </code>
           <div class="tip" id="48">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * issue:DateTime * firstCoupon:DateTime * rate:float&lt;1&gt; * yld:float&lt;1&gt; * redemption:float&lt;1&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
+            <strong>Signature:</strong>(rate:float&lt;MeasureOne&gt; * per:float&lt;MeasureOne&gt; * nper:float&lt;MeasureOne&gt; * pv:float&lt;MeasureOne&gt;) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The price per $100 face value of a security with an odd first period (<a href="http://office.microsoft.com/en-us/excel/HP052092041033.aspx">learn more</a>)</p>
+        <p>Calculates the interest paid during a specific period of an investment (<a href="http://office.microsoft.com/en-us/excel/HP052508401033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L143-143" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '49', 49)" onmouseover="showTip(event, '49', 49)">
-            OddFYield(...)
+            MDuration(...)
           </code>
           <div class="tip" id="49">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * issue:DateTime * firstCoupon:DateTime * rate:float&lt;1&gt; * pr:float&lt;1&gt; * redemption:float&lt;1&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * coupon:float&lt;MeasureOne&gt; * yld:float&lt;MeasureOne&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The yield of a security with an odd first period (<a href="http://office.microsoft.com/en-us/excel/HP052092051033.aspx">learn more</a>)</p>
+        <p>The Macauley modified duration for a security with an assumed par value of $100 (<a href="http://office.microsoft.com/en-us/excel/HP052091731033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L147-147" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '50', 50)" onmouseover="showTip(event, '50', 50)">
-            OddLPrice(...)
+            Mirr(values, financeRate, reinvestRate)
           </code>
           <div class="tip" id="50">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * lastInterest:DateTime * rate:float&lt;1&gt; * yld:float&lt;1&gt; * redemption:float&lt;1&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
+            <strong>Signature:</strong>(values:seq&lt;float&lt;MeasureOne&gt;&gt; * financeRate:float&lt;MeasureOne&gt; * reinvestRate:float&lt;MeasureOne&gt;) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The price per $100 face value of a security with an odd last period (<a href="http://office.microsoft.com/en-us/excel/HP052092061033.aspx">learn more</a>)</p>
+        <p>The internal rate of return where positive and negative cash flows are financed at different rates (<a href="http://office.microsoft.com/en-us/excel/HP052091801033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L151-151" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '51', 51)" onmouseover="showTip(event, '51', 51)">
-            OddLYield(...)
+            Nominal(effectRate, npery)
           </code>
           <div class="tip" id="51">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * lastInterest:DateTime * rate:float&lt;1&gt; * pr:float&lt;1&gt; * redemption:float&lt;1&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
+            <strong>Signature:</strong>(effectRate:float&lt;MeasureOne&gt; * npery:float&lt;MeasureOne&gt;) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The yield of a security with an odd last period (<a href="http://office.microsoft.com/en-us/excel/HP052092071033.aspx">learn more</a>)</p>
+        <p>The annual nominal interest rate (<a href="http://office.microsoft.com/en-us/excel/HP052091911033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L155-155" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '52', 52)" onmouseover="showTip(event, '52', 52)">
-            Pmt(rate, nper, pv, fv, typ)
+            NPer(rate, pmt, pv, fv, typ)
           </code>
           <div class="tip" id="52">
-            <strong>Signature:</strong>(rate:float&lt;1&gt; * nper:float * pv:float&lt;1&gt; * fv:float&lt;1&gt; * typ:PaymentDue) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(rate:float&lt;MeasureOne&gt; * pmt:float&lt;MeasureOne&gt; * pv:float * fv:float * typ:PaymentDue) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The periodic payment for an annuity (<a href="http://office.microsoft.com/en-us/excel/HP052092151033.aspx">learn more</a>)</p>
+        <p>The number of periods for an investment (<a href="http://office.microsoft.com/en-us/excel/HP052091981033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L159-159" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '53', 53)" onmouseover="showTip(event, '53', 53)">
-            PPmt(rate, per, nper, pv, fv, typ)
+            Npv(rate, values)
           </code>
           <div class="tip" id="53">
-            <strong>Signature:</strong>(rate:float&lt;1&gt; * per:float&lt;1&gt; * nper:float * pv:float&lt;1&gt; * fv:float&lt;1&gt; * typ:PaymentDue) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(rate:float&lt;MeasureOne&gt; * values:seq&lt;float&lt;MeasureOne&gt;&gt;) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The payment on the principal for an investment for a given period (<a href="http://office.microsoft.com/en-us/excel/HP052092181033.aspx">learn more</a>)</p>
+        <p>The net present value of an investment based on a series of periodic cash flows and a discount rate (<a href="http://office.microsoft.com/en-us/excel/HP052091991033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L163-163" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '54', 54)" onmouseover="showTip(event, '54', 54)">
-            Price(...)
+            OddFPrice(...)
           </code>
           <div class="tip" id="54">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * rate:float&lt;1&gt; * yld:float&lt;1&gt; * redemption:float&lt;1&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * issue:DateTime * firstCoupon:DateTime * rate:float&lt;MeasureOne&gt; * yld:float&lt;MeasureOne&gt; * redemption:float&lt;MeasureOne&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The price per $100 face value of a security that pays periodic interest (<a href="http://office.microsoft.com/en-us/excel/HP052092191033.aspx">learn more</a>)</p>
+        <p>The price per $100 face value of a security with an odd first period (<a href="http://office.microsoft.com/en-us/excel/HP052092041033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L167-167" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '55', 55)" onmouseover="showTip(event, '55', 55)">
-            PriceDisc(...)
+            OddFYield(...)
           </code>
           <div class="tip" id="55">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * discount:float&lt;1&gt; * redemption:float&lt;1&gt; * basis:DayCountBasis) -&gt; float<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * issue:DateTime * firstCoupon:DateTime * rate:float&lt;MeasureOne&gt; * pr:float&lt;MeasureOne&gt; * redemption:float&lt;MeasureOne&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The price per $100 face value of a discounted security (<a href="http://office.microsoft.com/en-us/excel/HP052092201033.aspx">learn more</a>)</p>
+        <p>The yield of a security with an odd first period (<a href="http://office.microsoft.com/en-us/excel/HP052092051033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L171-171" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '56', 56)" onmouseover="showTip(event, '56', 56)">
-            PriceMat(...)
+            OddLPrice(...)
           </code>
           <div class="tip" id="56">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * issue:DateTime * rate:float&lt;1&gt; * yld:float&lt;1&gt; * basis:DayCountBasis) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * lastInterest:DateTime * rate:float&lt;MeasureOne&gt; * yld:float&lt;MeasureOne&gt; * redemption:float&lt;MeasureOne&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The price per $100 face value of a security that pays interest at maturity (<a href="http://office.microsoft.com/en-us/excel/HP052092211033.aspx">learn more</a>)</p>
+        <p>The price per $100 face value of a security with an odd last period (<a href="http://office.microsoft.com/en-us/excel/HP052092061033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L175-175" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '57', 57)" onmouseover="showTip(event, '57', 57)">
-            Pv(rate, nper, pmt, fv, typ)
+            OddLYield(...)
           </code>
           <div class="tip" id="57">
-            <strong>Signature:</strong>(rate:float&lt;1&gt; * nper:float * pmt:float&lt;1&gt; * fv:float&lt;1&gt; * typ:PaymentDue) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * lastInterest:DateTime * rate:float&lt;MeasureOne&gt; * pr:float&lt;MeasureOne&gt; * redemption:float&lt;MeasureOne&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The present value of an investment (<a href="http://office.microsoft.com/en-us/excel/HP052092251033.aspx">learn more</a>)</p>
+        <p>The yield of a security with an odd last period (<a href="http://office.microsoft.com/en-us/excel/HP052092071033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L179-179" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '58', 58)" onmouseover="showTip(event, '58', 58)">
-            Rate(nper, pmt, pv, fv, typ)
+            Pmt(rate, nper, pv, fv, typ)
           </code>
           <div class="tip" id="58">
-            <strong>Signature:</strong>(nper:float&lt;1&gt; * pmt:float&lt;1&gt; * pv:float&lt;1&gt; * fv:float * typ:PaymentDue) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(rate:float&lt;MeasureOne&gt; * nper:float * pv:float&lt;MeasureOne&gt; * fv:float&lt;MeasureOne&gt; * typ:PaymentDue) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The interest rate per period of an annuity (<a href="http://office.microsoft.com/en-us/excel/HP052092321033.aspx">learn more</a>)</p>
+        <p>The periodic payment for an annuity (<a href="http://office.microsoft.com/en-us/excel/HP052092151033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L183-183" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '59', 59)" onmouseover="showTip(event, '59', 59)">
-            Rate(nper, pmt, pv, fv, typ, guess)
+            PPmt(rate, per, nper, pv, fv, typ)
           </code>
           <div class="tip" id="59">
-            <strong>Signature:</strong>(nper:float&lt;1&gt; * pmt:float&lt;1&gt; * pv:float&lt;1&gt; * fv:float * typ:PaymentDue * guess:float&lt;1&gt;) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(rate:float&lt;MeasureOne&gt; * per:float&lt;MeasureOne&gt; * nper:float * pv:float&lt;MeasureOne&gt; * fv:float&lt;MeasureOne&gt; * typ:PaymentDue) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The interest rate per period of an annuity (<a href="http://office.microsoft.com/en-us/excel/HP052092321033.aspx">learn more</a>)</p>
+        <p>The payment on the principal for an investment for a given period (<a href="http://office.microsoft.com/en-us/excel/HP052092181033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L187-187" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '60', 60)" onmouseover="showTip(event, '60', 60)">
-            Received(...)
+            Price(...)
           </code>
           <div class="tip" id="60">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * investment:float&lt;1&gt; * discount:float * basis:DayCountBasis) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * rate:float&lt;MeasureOne&gt; * yld:float&lt;MeasureOne&gt; * redemption:float&lt;MeasureOne&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The amount received at maturity for a fully invested security (<a href="http://office.microsoft.com/en-us/excel/HP052092331033.aspx">learn more</a>)</p>
+        <p>The price per $100 face value of a security that pays periodic interest (<a href="http://office.microsoft.com/en-us/excel/HP052092191033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L191-191" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '61', 61)" onmouseover="showTip(event, '61', 61)">
-            Sln(cost, salvage, life)
+            PriceDisc(...)
           </code>
           <div class="tip" id="61">
-            <strong>Signature:</strong>(cost:float&lt;1&gt; * salvage:float&lt;1&gt; * life:float&lt;1&gt;) -&gt; float<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * discount:float&lt;MeasureOne&gt; * redemption:float&lt;MeasureOne&gt; * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The straight-line depreciation of an asset for one period (<a href="http://office.microsoft.com/en-us/excel/HP052092631033.aspx">learn more</a>)</p>
+        <p>The price per $100 face value of a discounted security (<a href="http://office.microsoft.com/en-us/excel/HP052092201033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L195-195" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '62', 62)" onmouseover="showTip(event, '62', 62)">
-            Syd(cost, salvage, life, per)
+            PriceMat(...)
           </code>
           <div class="tip" id="62">
-            <strong>Signature:</strong>(cost:float&lt;1&gt; * salvage:float&lt;1&gt; * life:float&lt;1&gt; * per:float&lt;1&gt;) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * issue:DateTime * rate:float&lt;MeasureOne&gt; * yld:float&lt;MeasureOne&gt; * basis:DayCountBasis) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The sum-of-years' digits depreciation of an asset for a specified period (<a href="http://office.microsoft.com/en-us/excel/HP052093021033.aspx">learn more</a>)</p>
+        <p>The price per $100 face value of a security that pays interest at maturity (<a href="http://office.microsoft.com/en-us/excel/HP052092211033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L199-199" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '63', 63)" onmouseover="showTip(event, '63', 63)">
-            TBillEq(settlement, maturity, discount)
+            Pv(rate, nper, pmt, fv, typ)
           </code>
           <div class="tip" id="63">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * discount:float&lt;1&gt;) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(rate:float&lt;MeasureOne&gt; * nper:float * pmt:float&lt;MeasureOne&gt; * fv:float&lt;MeasureOne&gt; * typ:PaymentDue) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The bond-equivalent yield for a Treasury bill (<a href="http://office.microsoft.com/en-us/excel/HP052093091033.aspx">learn more</a>)</p>
+        <p>The present value of an investment (<a href="http://office.microsoft.com/en-us/excel/HP052092251033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L203-203" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '64', 64)" onmouseover="showTip(event, '64', 64)">
-            TBillPrice(...)
+            Rate(nper, pmt, pv, fv, typ)
           </code>
           <div class="tip" id="64">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * discount:float&lt;1&gt;) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(nper:float&lt;MeasureOne&gt; * pmt:float&lt;MeasureOne&gt; * pv:float&lt;MeasureOne&gt; * fv:float * typ:PaymentDue) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The price per $100 face value for a Treasury bill (<a href="http://office.microsoft.com/en-us/excel/HP052093101033.aspx">learn more</a>)</p>
+        <p>The interest rate per period of an annuity (<a href="http://office.microsoft.com/en-us/excel/HP052092321033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L210-210" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '65', 65)" onmouseover="showTip(event, '65', 65)">
-            TBillYield(settlement, maturity, pr)
+            Rate(nper, pmt, pv, fv, typ, guess)
           </code>
           <div class="tip" id="65">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * pr:float&lt;1&gt;) -&gt; float&lt;1&gt;<br />
+            <strong>Signature:</strong>(nper:float&lt;MeasureOne&gt; * pmt:float&lt;MeasureOne&gt; * pv:float&lt;MeasureOne&gt; * fv:float * typ:PaymentDue * guess:float&lt;MeasureOne&gt;) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The yield for a Treasury bill (<a href="http://office.microsoft.com/en-us/excel/HP052093111033.aspx">learn more</a>)</p>
+        <p>The interest rate per period of an annuity (<a href="http://office.microsoft.com/en-us/excel/HP052092321033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L207-207" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '66', 66)" onmouseover="showTip(event, '66', 66)">
-            Vdb(...)
+            Received(...)
           </code>
           <div class="tip" id="66">
-            <strong>Signature:</strong>(cost:float&lt;1&gt; * salvage:float&lt;1&gt; * life:float&lt;1&gt; * startPeriod:float&lt;1&gt; * endPeriod:float&lt;1&gt;) -&gt; float<br />
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * investment:float&lt;MeasureOne&gt; * discount:float * basis:DayCountBasis) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The depreciation of an asset for a specified or partial period by using a declining balance method (<a href="http://office.microsoft.com/en-us/excel/HP052093341033.aspx">learn more</a>)</p>
+        <p>The amount received at maturity for a fully invested security (<a href="http://office.microsoft.com/en-us/excel/HP052092331033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L214-214" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '67', 67)" onmouseover="showTip(event, '67', 67)">
-            Vdb(...)
+            Sln(cost, salvage, life)
           </code>
           <div class="tip" id="67">
-            <strong>Signature:</strong>(cost:float&lt;1&gt; * salvage:float&lt;1&gt; * life:float&lt;1&gt; * startPeriod:float&lt;1&gt; * endPeriod:float&lt;1&gt; * factor:float&lt;1&gt;) -&gt; float<br />
+            <strong>Signature:</strong>(cost:float&lt;MeasureOne&gt; * salvage:float&lt;MeasureOne&gt; * life:float&lt;MeasureOne&gt;) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
-        <p>The depreciation of an asset for a specified or partial period by using a declining balance method (<a href="http://office.microsoft.com/en-us/excel/HP052093341033.aspx">learn more</a>)</p>
+        <p>The straight-line depreciation of an asset for one period (<a href="http://office.microsoft.com/en-us/excel/HP052092631033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L218-218" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '68', 68)" onmouseover="showTip(event, '68', 68)">
-            Vdb(...)
+            Syd(cost, salvage, life, per)
           </code>
           <div class="tip" id="68">
-            <strong>Signature:</strong>(cost:float&lt;1&gt; * salvage:float&lt;1&gt; * life:float&lt;1&gt; * startPeriod:float&lt;1&gt; * endPeriod:float&lt;1&gt; * factor:float&lt;1&gt; * noSwitch:VdbSwitch) -&gt; float<br />
+            <strong>Signature:</strong>(cost:float&lt;MeasureOne&gt; * salvage:float&lt;MeasureOne&gt; * life:float&lt;MeasureOne&gt; * per:float&lt;MeasureOne&gt;) -&gt; float&lt;MeasureOne&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+        <p>The sum-of-years' digits depreciation of an asset for a specified period (<a href="http://office.microsoft.com/en-us/excel/HP052093021033.aspx">learn more</a>)</p>
+
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L222-222" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '69', 69)" onmouseover="showTip(event, '69', 69)">
+            TBillEq(settlement, maturity, discount)
+          </code>
+          <div class="tip" id="69">
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * discount:float&lt;MeasureOne&gt;) -&gt; float&lt;MeasureOne&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+        <p>The bond-equivalent yield for a Treasury bill (<a href="http://office.microsoft.com/en-us/excel/HP052093091033.aspx">learn more</a>)</p>
+
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L226-226" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '70', 70)" onmouseover="showTip(event, '70', 70)">
+            TBillPrice(...)
+          </code>
+          <div class="tip" id="70">
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * discount:float&lt;MeasureOne&gt;) -&gt; float&lt;MeasureOne&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+        <p>The price per $100 face value for a Treasury bill (<a href="http://office.microsoft.com/en-us/excel/HP052093101033.aspx">learn more</a>)</p>
+
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L230-230" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '71', 71)" onmouseover="showTip(event, '71', 71)">
+            TBillYield(settlement, maturity, pr)
+          </code>
+          <div class="tip" id="71">
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * pr:float&lt;MeasureOne&gt;) -&gt; float&lt;MeasureOne&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+        <p>The yield for a Treasury bill (<a href="http://office.microsoft.com/en-us/excel/HP052093111033.aspx">learn more</a>)</p>
+
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L234-234" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '72', 72)" onmouseover="showTip(event, '72', 72)">
+            Vdb(...)
+          </code>
+          <div class="tip" id="72">
+            <strong>Signature:</strong>(cost:float&lt;MeasureOne&gt; * salvage:float&lt;MeasureOne&gt; * life:float&lt;MeasureOne&gt; * startPeriod:float&lt;MeasureOne&gt; * endPeriod:float&lt;MeasureOne&gt;) -&gt; float<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+        <p>The depreciation of an asset for a specified or partial period by using a declining balance method (<a href="http://office.microsoft.com/en-us/excel/HP052093341033.aspx">learn more</a>)</p>
+
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L249-249" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '73', 73)" onmouseover="showTip(event, '73', 73)">
+            Vdb(...)
+          </code>
+          <div class="tip" id="73">
+            <strong>Signature:</strong>(cost:float&lt;MeasureOne&gt; * salvage:float&lt;MeasureOne&gt; * life:float&lt;MeasureOne&gt; * startPeriod:float&lt;MeasureOne&gt; * endPeriod:float&lt;MeasureOne&gt; * factor:float&lt;MeasureOne&gt;) -&gt; float<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+        <p>The depreciation of an asset for a specified or partial period by using a declining balance method (<a href="http://office.microsoft.com/en-us/excel/HP052093341033.aspx">learn more</a>)</p>
+
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L246-246" class="github-link">Go to GitHub source</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '74', 74)" onmouseover="showTip(event, '74', 74)">
+            Vdb(...)
+          </code>
+          <div class="tip" id="74">
+            <strong>Signature:</strong>(cost:float&lt;MeasureOne&gt; * salvage:float&lt;MeasureOne&gt; * life:float&lt;MeasureOne&gt; * startPeriod:float&lt;MeasureOne&gt; * endPeriod:float&lt;MeasureOne&gt; * factor:float&lt;MeasureOne&gt; * noSwitch:VdbSwitch) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
@@ -883,60 +937,64 @@ Notice that in Excel by using '1' (no_switch) instead of '0' as the last paramet
 In truth, the last parameter should have no influence in the calculation given that in the first period there is no switch to sln depreciation.<br />
 Overall, I think my algorithm is correct, even if it disagrees with Excel when startperiod is fractional.</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L243-243" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '69', 69)" onmouseover="showTip(event, '69', 69)">
+          <code onmouseout="hideTip(event, '75', 75)" onmouseover="showTip(event, '75', 75)">
             XIrr(values, dates)
           </code>
-          <div class="tip" id="69">
-            <strong>Signature:</strong>(values:seq&lt;float&lt;1&gt;&gt; * dates:seq&lt;DateTime&gt;) -&gt; float&lt;1&gt;<br />
+          <div class="tip" id="75">
+            <strong>Signature:</strong>(values:seq&lt;float&lt;MeasureOne&gt;&gt; * dates:seq&lt;DateTime&gt;) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
         <p>The internal rate of return for a schedule of cash flows that is not necessarily periodic (<a href="http://office.microsoft.com/en-us/excel/HP052093411033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L256-256" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '70', 70)" onmouseover="showTip(event, '70', 70)">
+          <code onmouseout="hideTip(event, '76', 76)" onmouseover="showTip(event, '76', 76)">
             XIrr(values, dates, guess)
           </code>
-          <div class="tip" id="70">
-            <strong>Signature:</strong>(values:seq&lt;float&lt;1&gt;&gt; * dates:seq&lt;DateTime&gt; * guess:float&lt;1&gt;) -&gt; float&lt;1&gt;<br />
+          <div class="tip" id="76">
+            <strong>Signature:</strong>(values:seq&lt;float&lt;MeasureOne&gt;&gt; * dates:seq&lt;DateTime&gt; * guess:float&lt;MeasureOne&gt;) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
         <p>The internal rate of return for a schedule of cash flows that is not necessarily periodic (<a href="http://office.microsoft.com/en-us/excel/HP052093411033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L253-253" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '71', 71)" onmouseover="showTip(event, '71', 71)">
+          <code onmouseout="hideTip(event, '77', 77)" onmouseover="showTip(event, '77', 77)">
             XNpv(rate, values, dates)
           </code>
-          <div class="tip" id="71">
-            <strong>Signature:</strong>(rate:float&lt;1&gt; * values:seq&lt;float&lt;1&gt;&gt; * dates:seq&lt;DateTime&gt;) -&gt; float&lt;1&gt;<br />
+          <div class="tip" id="77">
+            <strong>Signature:</strong>(rate:float&lt;MeasureOne&gt; * values:seq&lt;float&lt;MeasureOne&gt;&gt; * dates:seq&lt;DateTime&gt;) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
         <p>The net present value for a schedule of cash flows that is not necessarily periodic (<a href="http://office.microsoft.com/en-us/excel/HP052093421033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L260-260" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '72', 72)" onmouseover="showTip(event, '72', 72)">
+          <code onmouseout="hideTip(event, '78', 78)" onmouseover="showTip(event, '78', 78)">
             YearFrac(startDate, endDate, basis)
           </code>
-          <div class="tip" id="72">
+          <div class="tip" id="78">
             <strong>Signature:</strong>(startDate:DateTime * endDate:DateTime * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
@@ -944,51 +1002,55 @@ Overall, I think my algorithm is correct, even if it disagrees with Excel when s
         <p>Calculates the fraction of the year represented by the number of whole days between two dates - not a financial function
 (<a href="http://office.microsoft.com/en-us/excel/HP052093441033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L277-277" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '73', 73)" onmouseover="showTip(event, '73', 73)">
+          <code onmouseout="hideTip(event, '79', 79)" onmouseover="showTip(event, '79', 79)">
             Yield(...)
           </code>
-          <div class="tip" id="73">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * rate:float&lt;1&gt; * pr:float&lt;1&gt; * redemption:float&lt;1&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float&lt;1&gt;<br />
+          <div class="tip" id="79">
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * rate:float&lt;MeasureOne&gt; * pr:float&lt;MeasureOne&gt; * redemption:float&lt;MeasureOne&gt; * frequency:Frequency * basis:DayCountBasis) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
         <p>The yield on a security that pays periodic interest (<a href="http://office.microsoft.com/en-us/excel/HP052093451033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L264-264" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '74', 74)" onmouseover="showTip(event, '74', 74)">
+          <code onmouseout="hideTip(event, '80', 80)" onmouseover="showTip(event, '80', 80)">
             YieldDisc(...)
           </code>
-          <div class="tip" id="74">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * pr:float&lt;1&gt; * redemption:float&lt;1&gt; * basis:DayCountBasis) -&gt; float<br />
+          <div class="tip" id="80">
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * pr:float&lt;MeasureOne&gt; * redemption:float&lt;MeasureOne&gt; * basis:DayCountBasis) -&gt; float<br />
                       </div>
         </td>
         <td class="xmldoc">
         <p>The annual yield for a discounted security; for example, a Treasury bill (<a href="http://office.microsoft.com/en-us/excel/HP052093461033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L268-268" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '75', 75)" onmouseover="showTip(event, '75', 75)">
+          <code onmouseout="hideTip(event, '81', 81)" onmouseover="showTip(event, '81', 81)">
             YieldMat(...)
           </code>
-          <div class="tip" id="75">
-            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * issue:DateTime * rate:float&lt;1&gt; * pr:float&lt;1&gt; * basis:DayCountBasis) -&gt; float&lt;1&gt;<br />
+          <div class="tip" id="81">
+            <strong>Signature:</strong>(settlement:DateTime * maturity:DateTime * issue:DateTime * rate:float&lt;MeasureOne&gt; * pr:float&lt;MeasureOne&gt; * basis:DayCountBasis) -&gt; float&lt;MeasureOne&gt;<br />
                       </div>
         </td>
         <td class="xmldoc">
         <p>The annual yield of a security that pays interest at maturity (<a href="http://office.microsoft.com/en-us/excel/HP052093471033.aspx">learn more</a>)</p>
 
+            <a href="https://github.com/fsprojects/ExcelFinancialFunctions/tree/master/src//ExcelFinancialFunctions/wrapperdotnettype.fs#L272-272" class="github-link">Go to GitHub source</a>
         </td>
       </tr>
     </tbody>
@@ -1017,6 +1079,6 @@ Overall, I think my algorithm is correct, even if it disagrees with Excel when s
         </div>
       </div>
     </div>
-    <a href="http://github.com/fsprojects/ExcelFinancialFunctions"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    <a href="http://github.com/fsprojects/ExcelFinancialFunctions"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
   </body>
   </html>
