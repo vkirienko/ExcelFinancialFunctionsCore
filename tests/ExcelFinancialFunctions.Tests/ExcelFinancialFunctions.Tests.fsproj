@@ -4,8 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>58b83e58-d79f-4362-9898-bab688b349fe</ProjectGuid>
+    <ProjectGuid>{58B83E58-D79F-4362-9898-BAB688B349FE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>ExcelFinancialFunctions.Tests</RootNamespace>
     <AssemblyName>ExcelFinancialFunctions.Tests</AssemblyName>
@@ -57,6 +56,7 @@
     <Compile Include="crosstests.fs" />
     <Compile Include="spottests.fs" />
     <Compile Include="concurrencytests.fs" />
+    <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExcelFinancialFunctions">
@@ -68,7 +68,6 @@
     <Reference Include="mscorlib" />
     <Reference Include="nunit.framework">
       <HintPath>..\..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
