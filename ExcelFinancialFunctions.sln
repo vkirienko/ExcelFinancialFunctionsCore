@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ExcelFinancialFunctions", "src\ExcelFinancialFunctions\ExcelFinancialFunctions.fsproj", "{8853070C-D0B3-4DE6-B80B-B1D10F839359}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ExcelFinancialFunctions", "src\ExcelFinancialFunctions\ExcelFinancialFunctions.fsproj", "{F6239FD3-E210-45B1-86B0-59EE67CB7DDB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{7F0B1813-150B-4B30-8872-625C37BD67D4}"
 EndProject
@@ -33,28 +33,38 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A38472EB
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ExcelFinancialFunctions.Tests", "tests\ExcelFinancialFunctions.Tests\ExcelFinancialFunctions.Tests.fsproj", "{17FE313F-5304-448C-892E-451E17EEEE83}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "ExcelFinancialFunctions.ConsoleTests", "tests\ExcelFinancialFunctions.ConsoleTests\ExcelFinancialFunctions.ConsoleTests.fsproj", "{7F430A68-E091-4605-A480-E6071DCA0781}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8853070C-D0B3-4DE6-B80B-B1D10F839359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8853070C-D0B3-4DE6-B80B-B1D10F839359}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8853070C-D0B3-4DE6-B80B-B1D10F839359}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8853070C-D0B3-4DE6-B80B-B1D10F839359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6239FD3-E210-45B1-86B0-59EE67CB7DDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6239FD3-E210-45B1-86B0-59EE67CB7DDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6239FD3-E210-45B1-86B0-59EE67CB7DDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6239FD3-E210-45B1-86B0-59EE67CB7DDB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{17FE313F-5304-448C-892E-451E17EEEE83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{17FE313F-5304-448C-892E-451E17EEEE83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17FE313F-5304-448C-892E-451E17EEEE83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17FE313F-5304-448C-892E-451E17EEEE83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F430A68-E091-4605-A480-E6071DCA0781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F430A68-E091-4605-A480-E6071DCA0781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F430A68-E091-4605-A480-E6071DCA0781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F430A68-E091-4605-A480-E6071DCA0781}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{8853070C-D0B3-4DE6-B80B-B1D10F839359} = {499DEF1A-0386-4DD9-B276-3CCC6002639E}
+		{F6239FD3-E210-45B1-86B0-59EE67CB7DDB} = {499DEF1A-0386-4DD9-B276-3CCC6002639E}
 		{5E196AFF-81D3-4BD5-964A-5A9E642CD104} = {7F0B1813-150B-4B30-8872-625C37BD67D4}
 		{6FEE0C58-7CBD-4091-8D56-55AA733E1131} = {7F0B1813-150B-4B30-8872-625C37BD67D4}
 		{17FE313F-5304-448C-892E-451E17EEEE83} = {A38472EB-1686-402D-8619-EC2BA407C111}
+		{7F430A68-E091-4605-A480-E6071DCA0781} = {A38472EB-1686-402D-8619-EC2BA407C111}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0C46117-0293-4210-A035-E056C07C4D1A}
 	EndGlobalSection
 EndGlobal
